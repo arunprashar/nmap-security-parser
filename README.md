@@ -27,7 +27,7 @@ This tool automates the ingestion and parsing of Nmap XML reports, dynamically a
 Ensure Python 3.x is installed on your system. Clone the repository and navigate to the project directory:
 
 ```bash
-git clone [https://github.com/arunprashar/nmap-security-parser.git](https://github.com/YOUR_USERNAME/nmap-security-parser.git)
+git clone [https://github.com/arunprashar/nmap-security-parser.git](https://github.com/arunprashar/nmap-security-parser.git)
 cd nmap-security-parser
 
  7. Usage Instructions & Syntax
@@ -118,19 +118,19 @@ Markdown
 
 10. Security Considerations
 
-    Data Sensitivity: Generated security reports contain target infrastructure details, open ports, and software versions. Reports should be transmitted and stored securely in compliance with data privacy standards.
+   - Data Sensitivity: Generated security reports contain target infrastructure details, open ports, and software versions. Reports should be transmitted and stored securely in compliance with data privacy standards.
 
-    Passive Processing: The utility operates strictly in offline read-only mode against local XML files; it does not perform active probing or generate network traffic.
+   - Passive Processing: The utility operates strictly in offline read-only mode against local XML files; it does not perform active probing or generate network traffic.
 
 11. Known Limitations
 
-    Banner-Dependent Heuristics: Risk categorization relies primarily on service banners and version strings provided by Nmap. Heavily customized or obfuscated banners may result in miscategorization.
+   - Banner-Dependent Heuristics: Risk categorization relies primarily on service banners and version strings provided by Nmap. Heavily customized or obfuscated banners may result in miscategorization.
 
-    Exploitability Verification: Banner-based findings indicate potential vulnerability exposure, not verified exploitability. Manual penetration testing and verification are always required.
+   - Exploitability Verification: Banner-based findings indicate potential vulnerability exposure, not verified exploitability. Manual penetration testing and verification are always required.
 
 12. Future Improvements
 
-    Integrate CVSS scoring calculation for discovered service versions.
+   -  Integrate CVSS scoring calculation for discovered service versions.
 
-    Expand parser capability to ingest multi-source scan formats (e.g., Nessus .nessus XML and Masscan outputs).
+   - Expand parser capability to ingest multi-source scan formats (e.g., Nessus .nessus XML and Masscan outputs).
 
