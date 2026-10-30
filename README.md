@@ -25,8 +25,8 @@ This tool automates the ingestion and parsing of Nmap XML reports, dynamically a
 
 ## 6. Installation Instructions
 Ensure Python 3.x is installed on your system. Clone the repository and navigate to the project directory:
+Bash 
 
-```bash
 git clone [https://github.com/arunprashar/nmap-security-parser.git](https://github.com/arunprashar/nmap-security-parser.git)
 cd nmap-security-parser
 
