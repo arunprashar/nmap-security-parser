@@ -30,7 +30,7 @@ Ensure Python 3.x is installed on your system. Clone the repository and navigate
 git clone [https://github.com/arunprashar/nmap-security-parser.git](https://github.com/arunprashar/nmap-security-parser.git)
 cd nmap-security-parser
 
- 7. Usage Instructions & Syntax
+## 7. Usage Instructions & Syntax
 
 Run the parser from the command line using the following syntax:
 Bash
@@ -45,14 +45,14 @@ Argument Parameters:
 
     -f, --format: Choice of output format: markdown, json, or both (Default: markdown).
 
-8. Sample Command
+## 8. Sample Command
 
 To generate both Markdown and JSON reports simultaneously from an Nmap scan file:
 Bash
 
 python nmap_sec_parser.py -i sample_scan.xml -o security_summary -f both
 
-9. Sample Input and Output
+## 9. Sample Input and Output
 Input Source
 
 A standard Nmap scan file generated via:
@@ -116,19 +116,19 @@ Markdown
 
 > *Note: This tool provides dynamic banner-based prioritization. Pentesters must perform manual exploitation verification to confirm actionable security risk.*
 
-10. Security Considerations
+## 10. Security Considerations
 
    - Data Sensitivity: Generated security reports contain target infrastructure details, open ports, and software versions. Reports should be transmitted and stored securely in compliance with data privacy standards.
 
    - Passive Processing: The utility operates strictly in offline read-only mode against local XML files; it does not perform active probing or generate network traffic.
 
-11. Known Limitations
+## 11. Known Limitations
 
    - Banner-Dependent Heuristics: Risk categorization relies primarily on service banners and version strings provided by Nmap. Heavily customized or obfuscated banners may result in miscategorization.
 
    - Exploitability Verification: Banner-based findings indicate potential vulnerability exposure, not verified exploitability. Manual penetration testing and verification are always required.
 
-12. Future Improvements
+## 12. Future Improvements
 
    -  Integrate CVSS scoring calculation for discovered service versions.
 
