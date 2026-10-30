@@ -28,6 +28,7 @@ Ensure Python 3.x is installed on your system. Clone the repository and navigate
 Bash 
 
 git clone [https://github.com/arunprashar/nmap-security-parser.git](https://github.com/arunprashar/nmap-security-parser.git)
+
 cd nmap-security-parser
 
 ## 7. Usage Instructions & Syntax
